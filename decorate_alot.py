@@ -35,6 +35,8 @@ class Wrapper:
     def line(self, max_digits=100, space=False):
         if space == True:
             symbol = f"- "
+        else:
+            symbol = '-'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
@@ -46,6 +48,8 @@ class Wrapper:
     def star(self, max_digits=100, space=False):
         if space == True:
             symbol = f"* "
+        else:
+            symbol = '*'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
@@ -57,6 +61,8 @@ class Wrapper:
     def arrow(self, max_digits=100, space=False):
         if space == True:
             symbol = f"^ "
+        else:
+            symbol = '^'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
@@ -68,6 +74,8 @@ class Wrapper:
     def square(self, max_digits=100, space=False):
         if space == True:
             symbol = f"# "
+        else:
+            symbol = '#'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
@@ -79,6 +87,8 @@ class Wrapper:
     def tilde(self, max_digits=100, space=False):
         if space == True:
             symbol = f"~ "
+        else:
+            symbol = '~'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
@@ -90,6 +100,8 @@ class Wrapper:
     def dot(self, max_digits=100, space=False):
         if space == True:
             symbol = f". "
+        else:
+            symbol = '.'
 
         def wrapper(func):
             print(f'{symbol}' * max_digits)
